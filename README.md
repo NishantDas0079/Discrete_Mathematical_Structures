@@ -1,6 +1,6 @@
 # 1. SET Class Implementation with Comprehensive Operations
 
-```
+```python
 class SET:
     """
     A mathematical SET implementation supporting fundamental set operations.
@@ -254,7 +254,7 @@ def menu_driven_set():
 
 # 2. RELATION Class for Analyzing Binary Relations
 
-```
+```python
 class RELATION:
     """
     A class to represent and analyze binary relations using matrix notation.
@@ -427,7 +427,7 @@ def demonstrate_relation():
 
 # 3. Permutation Generator for Discrete Sequences
 
-```
+```python
 def generate_permutations_without_repetition(elements):
     """
     Generate all permutations of a set without repetition.
@@ -507,7 +507,7 @@ def permutations_demonstration():
 
 # 4. Integer Partition Solutions via Brute Force Search
 
-```
+```python
 def find_integer_solutions(n, C):
     """
     Find all non-negative integer solutions to:
@@ -613,7 +613,7 @@ def solve_linear_diophantine():
 
 # 5. Polynomial Function Evaluation Engine
 
-```
+```python
 class Polynomial:
     """
     A class to represent and evaluate polynomial functions.
@@ -790,7 +790,7 @@ def interactive_polynomial():
 
 # 6. Complete Graph Verification System
 
-```
+```python
 def is_complete_graph(adjacency_matrix):
     """
     Determine if a graph represented by adjacency matrix is complete.
@@ -986,7 +986,7 @@ def interactive_graph_check():
 
 # 7. Directed Graph Degree Analysis Tool
 
-```
+```python
 def analyze_directed_graph(adjacency_matrix):
     """
     Analyze in-degree and out-degree of each vertex in a directed graph.
