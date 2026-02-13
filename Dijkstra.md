@@ -1,3 +1,9 @@
+# Dijkstra Algorithm
+
+Dijkstra’s Algorithm is a famous search algorithm used to find the shortest path between a starting node and every other node in a weighted graph.
+
+Think of it as the mathematical engine behind Google Maps or flight route planners. If you want to get from City A to City E using the least amount of fuel or time, Dijkstra’s is the tool that calculates that route.
+
 ```python
 import heapq
 
