@@ -1,5 +1,38 @@
 # Chapter 1: The Foundations - Logic and Proofs
 # 1.1 Propositional Logic
+
+```mermaid
+graph TD
+    A[Logic and Proofs] --> B[Propositional Logic]
+    A --> C[Applications]
+    A --> D[Equivalences]
+    A --> E[Predicates & Quantifiers]
+    A --> F[Rules of Inference]
+    A --> G[Proof Methods]
+    A --> H[Proof Strategy]
+
+    B --> B1[Propositions, operators, truth tables]
+    B --> B2[Conditional, converse, contrapositive]
+
+    C --> C1[System specifications]
+    C --> C2[Logic puzzles (knights/knaves)]
+
+    D --> D1[Tautology, contradiction, contingency]
+    D --> D2[De Morgan's, distributive, etc.]
+
+    E --> E1[Predicates, ∀, ∃, nested quantifiers]
+    E --> E2[Negation of quantifiers]
+
+    F --> F1[Modus ponens, tollens, syllogisms]
+    F --> F2[Universal instantiation/generalization]
+
+    G --> G1[Direct, contraposition, contradiction]
+    G --> G2[Proof by cases, existence proofs]
+
+    H --> H1[Forward/backward reasoning]
+    H --> H2[Counterexamples, open problems]
+```
+
 Propositions
 A proposition is a declarative sentence that is either true or false, but not both
 
@@ -196,8 +229,41 @@ Circular reasoning (begging the question): Assuming what you're trying to prove
 Incorrect use of cases: Not covering all cases
 
 
-#Chapter 2: Basic Structures - Sets, Functions, Sequences, Sums, and Matrices
+# Chapter 2: Basic Structures - Sets, Functions, Sequences, Sums, and Matrices
 # 2.1 Sets
+
+```mermaid
+graph TD
+    A[Basic Structures] --> B[Sets]
+    A --> C[Set Operations]
+    A --> D[Functions]
+    A --> E[Sequences & Summations]
+    A --> F[Cardinality of Sets]
+    A --> G[Matrices]
+
+    B --> B1[Definitions, subsets, power set]
+    B --> B2[Cartesian product, truth sets]
+
+    C --> C1[Union, intersection, complement, difference]
+    C --> C2[Set identities, membership tables]
+    C --> C3[Computer representation (bit strings)]
+
+    D --> D1[Domain, codomain, range]
+    D --> D2[Injective, surjective, bijective]
+    D --> D3[Inverse, composition]
+    D --> D4[Floor, ceiling, factorial]
+
+    E --> E1[Sequences, recurrence, special sequences]
+    E --> E2[Summation formulas, geometric series]
+
+    F --> F1[Countable vs uncountable sets]
+    F --> F2[Cantor diagonalization]
+    F --> F3[ℵ₀, continuum hypothesis]
+
+    G --> G1[Matrix operations, transpose]
+    G --> G2[Zero–one matrices, Boolean product]
+```
+
 Definitions
 Set: Unordered collection of distinct objects
 
@@ -398,6 +464,40 @@ Boolean product A ⊙ B: cᵢⱼ = ∨{q=1}^{k} (aᵢq ∧ b{qⱼ})
 
 # Chapter 4: Number Theory and Cryptography
 # 4.1 Divisibility and Modular Arithmetic
+
+```mermaid
+graph TD
+    A[Number Theory & Cryptography] --> B[Divisibility & Modular Arithmetic]
+    A --> C[Integer Representations & Algorithms]
+    A --> D[Primes & GCD]
+    A --> E[Solving Congruences]
+    A --> F[Applications of Congruences]
+    A --> G[Cryptography]
+
+    B --> B1[Division algorithm, div & mod]
+    B --> B2[Congruences, modular arithmetic]
+
+    C --> C1[Base b expansions, binary/octal/hex]
+    C --> C2[Addition, multiplication algorithms]
+    C --> C3[Fast modular exponentiation]
+
+    D --> D1[Prime definition, fundamental theorem]
+    D --> D2[Trial division, sieve of Eratosthenes]
+    D --> D3[Infinitude of primes, Mersenne primes]
+    D --> D4[GCD, Euclidean algorithm, lcm]
+
+    E --> E1[Linear congruences]
+    E --> E2[Chinese Remainder Theorem]
+    E --> E3[Fermat's little theorem, Euler's theorem]
+
+    F --> F1[Hashing functions]
+    F --> F2[Pseudorandom numbers]
+    F --> F3[Check digits (ISBN, Luhn)]
+
+    G --> G1[Caesar, affine ciphers]
+    G --> G2[RSA public key cryptosystem]
+```
+
 Divisibility
 a | b means a divides b (∃c such that b = ac)
 
@@ -537,6 +637,36 @@ Credit cards: Luhn algorithm
 
 # Chapter 6: Counting
 # 6.1 The Basics of Counting
+
+```mermaid
+graph TD
+    A[Counting] --> B[Basics of Counting]
+    A --> C[Pigeonhole Principle]
+    A --> D[Permutations & Combinations]
+    A --> E[Binomial Coefficients & Identities]
+    A --> F[Generalized Permutations & Combinations]
+    A --> G[Generating Permutations & Combinations]
+
+    B --> B1[Product rule, sum rule]
+    B --> B2[Inclusion–exclusion principle]
+
+    C --> C1[Simple pigeonhole]
+    C --> C2[Generalized pigeonhole]
+
+    D --> D1[P(n,r) = n!/(n−r)!]
+    D --> D2[C(n,r) = n!/(r!(n−r)!)]
+
+    E --> E1[Binomial theorem]
+    E --> E2[Identities (Pascal, sums)]
+
+    F --> F1[Permutations with repetition (nʳ)]
+    F --> F2[Combinations with repetition C(n+r−1, r)]
+    F --> F3[Distributing objects into boxes]
+
+    G --> G1[Lexicographic order]
+    G --> G2[Next permutation/combination algorithms]
+```
+
 Product Rule
 If procedure has m ways to do task 1 and n ways to do task 2, then there are m·n ways to do both tasks
 
@@ -625,6 +755,42 @@ Replace aᵢ with aᵢ + 1, then set aᵢ₊₁ = aᵢ + 1, aᵢ₊₂ = aᵢ + 
 
 # Chapter 10: Graphs
 # 10.1 Graphs and Graph Models
+
+```mermaid
+graph TD
+    A[Graphs] --> B[Graph Models & Terminology]
+    A --> C[Special Types of Graphs]
+    A --> D[Representing Graphs & Isomorphism]
+    A --> E[Connectivity]
+    A --> F[Euler & Hamilton Paths]
+    A --> G[Shortest-Path Problems]
+    A --> H[Planar Graphs]
+    A --> I[Graph Coloring]
+
+    B --> B1[Simple, multigraph, pseudograph, digraph]
+    B --> B2[Degree, handshaking theorem]
+
+    C --> C1[Complete Kₙ, cycle Cₙ, wheel Wₙ, n‑cube Qₙ]
+    C --> C2[Bipartite, complete bipartite K_{m,n}]
+
+    D --> D1[Adjacency lists/matrices, incidence matrix]
+    D --> D2[Graph isomorphism, invariants]
+
+    E --> E1[Paths, circuits, connected components]
+    E --> E2[Vertex/edge connectivity, cut vertices/edges]
+
+    F --> F1[Euler path/circuit conditions]
+    F --> F2[Hamilton path/circuit (Dirac, Ore)]
+
+    G --> G1[Dijkstra's algorithm]
+
+    H --> H1[Euler's formula v − e + f = 2]
+    H --> H2[Kuratowski's theorem (K₅, K_{3,3})]
+
+    I --> I1[Chromatic number χ(G)]
+    I --> I2[Four color theorem]
+```
+
 Definitions
 Graph G = (V, E) where V = vertices, E = edges
 
@@ -789,6 +955,34 @@ Register allocation in compilers
 
 # Chapter 11: Trees
 # 11.1 Introduction to Trees
+
+```mermaid
+graph TD
+    A[Trees] --> B[Introduction to Trees]
+    A --> C[Applications of Trees]
+    A --> D[Tree Traversal]
+    A --> E[Spanning Trees]
+    A --> F[Minimum Spanning Trees]
+
+    B --> B1[Tree, forest, rooted tree, parent/child]
+    B --> B2[Properties (n vertices ⇒ n−1 edges)]
+    B --> B3[m‑ary trees, full m‑ary, binary trees]
+
+    C --> C1[Binary search trees]
+    C --> C2[Decision trees, sorting lower bound]
+    C --> C3[Prefix codes, Huffman coding]
+    C --> C4[Game trees, minimax]
+
+    D --> D1[Preorder, inorder, postorder]
+    D --> D2[Infix, prefix, postfix notation]
+
+    E --> E1[DFS (depth‑first search)]
+    E --> E2[BFS (breadth‑first search)]
+
+    F --> F1[Prim's algorithm]
+    F --> F2[Kruskal's algorithm]
+```
+
 Definitions
 Tree: Connected undirected graph with no simple circuits
 
