@@ -274,3 +274,79 @@ Returns a list of subsets (each subset is a list).
 Determines whether the current set is a subset of `other_set (i.e., self ⊆ other_set)`.
 
 Uses `all()` to verify that every element of `self` is also present in `other_set`.
+
+Returns a new set containing all elements from the current set and from `other_set` (i.e., A ∪ B).
+
+Combines the two lists and passes them to the `constructor`, which automatically removes duplicates.
+
+Returns a new set containing elements that belong to both the current set and `other_set` (i.e., A ∩ B).
+
+List comprehension filters elements of `self` that also appear in `other_set`.
+
+Returns the complement of the current set with respect to a given universal set `U` (i.e., Aᶜ = U – A).
+
+Collects all elements of `U` that are not in the current set.
+
+Returns a new set containing elements of the current set that are not in `other_set` (i.e., A – B).
+
+List comprehension excludes elements found in `other_set`.
+
+Returns the symmetric difference A Δ B = (A – B) ∪ (B – A).
+
+Computes the union of the two sets, then removes the intersection.
+
+Returns a list of ordered pairs (a, b) where `a ∈ A` and `b ∈ B` (i.e., A × B).
+
+Uses a nested list comprehension to generate all combinations.
+
+# SAMPLE RUN
+
+```text
+=== SET OPERATIONS SIMULATOR ===
+Enter elements of set A (space separated):
+1 2 3 4
+
+========================================
+SET OPERATIONS MENU
+========================================
+1. Check Membership (is_member)
+2. Generate Power Set
+3. Check Subset Relation
+4. Union of Two Sets
+5. Intersection of Two Sets
+6. Complement Relative to Universal Set
+7. Set Difference (A - B)
+8. Symmetric Difference (A Δ B)
+9. Cartesian Product (A × B)
+10. Exit Program
+----------------------------------------
+Enter your choice (1-10): 1
+Enter element to check for membership: 3
+Element '3' is a member of set A
+
+Enter your choice (1-10): 2
+Power Set of A (contains 16 subsets):
+  Subset 1: []
+  Subset 2: [1]
+  Subset 3: [2]
+  Subset 4: [3]
+  Subset 5: [4]
+  Subset 6: [1, 2]
+  Subset 7: [1, 3]
+  Subset 8: [1, 4]
+  Subset 9: [2, 3]
+  Subset 10: [2, 4]
+  Subset 11: [3, 4]
+  Subset 12: [1, 2, 3]
+  Subset 13: [1, 2, 4]
+  Subset 14: [1, 3, 4]
+  Subset 15: [2, 3, 4]
+  Subset 16: [1, 2, 3, 4]
+
+Enter your choice (1-10): 5
+Enter elements of set B (space separated):
+3 4 5 6
+A ∩ B = [3, 4]
+
+...
+```
