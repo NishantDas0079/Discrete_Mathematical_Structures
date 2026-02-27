@@ -76,14 +76,23 @@ Logical Equivalences (p ≡ q means p ↔ q is a tautology)
 Law	Formula
 
 Identity	p ∧ T ≡ p, p ∨ F ≡ p
+
 Domination	p ∨ T ≡ T, p ∧ F ≡ F
+
 Idempotent	p ∨ p ≡ p, p ∧ p ≡ p
+
 Double negation	¬(¬p) ≡ p
+
 Commutative	p ∨ q ≡ q ∨ p, p ∧ q ≡ q ∧ p
+
 Associative	(p ∨ q) ∨ r ≡ p ∨ (q ∨ r), (p ∧ q) ∧ r ≡ p ∧ (q ∧ r)
+
 Distributive	p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r), p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)
+
 De Morgan's	¬(p ∧ q) ≡ ¬p ∨ ¬q, ¬(p ∨ q) ≡ ¬p ∧ ¬q
+
 Absorption	p ∨ (p ∧ q) ≡ p, p ∧ (p ∨ q) ≡ p
+
 Negation	p ∨ ¬p ≡ T, p ∧ ¬p ≡ F
 
 Conditional Equivalences
@@ -237,22 +246,38 @@ Aⁿ = {(a₁, a₂, ..., aₙ) | aᵢ ∈ A}
 # 2.2 Set Operations
 Basic Operations
 Operation	Notation	Definition
+
 Union	A ∪ B	{x	x ∈ A ∨ x ∈ B}
+
 Intersection	A ∩ B	{x	x ∈ A ∧ x ∈ B}
+
 Difference	A - B	{x	x ∈ A ∧ x ∉ B}
+
 Complement	Ā	{x ∈ U	x ∉ A}
+
 Set Identities
 Law	Formula
+
 Identity	A ∪ ∅ = A, A ∩ U = A
+
 Domination	A ∪ U = U, A ∩ ∅ = ∅
+
 Idempotent	A ∪ A = A, A ∩ A = A
+
 Complementation	(Ā) = A
+
 Commutative	A ∪ B = B ∪ A, A ∩ B = B ∩ A
+
 Associative	A ∪ (B ∪ C) = (A ∪ B) ∪ C, A ∩ (B ∩ C) = (A ∩ B) ∩ C
+
 Distributive	A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C), A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
+
 De Morgan's	A ∪ B = Ā ∩ B̄, A ∩ B = Ā ∪ B̄
+
 Absorption	A ∪ (A ∩ B) = A, A ∩ (A ∪ B) = A
+
 Complement	A ∪ Ā = U, A ∩ Ā = ∅
+
 Computer Representation
 Bit string representation: 1 if element in set, 0 otherwise
 
@@ -270,9 +295,13 @@ Range: Set of all images of elements of A
 
 Types of Functions
 Type	Property
+
 One-to-one (injective)	f(a) = f(b) ⇒ a = b
+
 Onto (surjective)	∀b ∈ B, ∃a ∈ A with f(a) = b
+
 Bijection (one-to-one correspondence)	Both injective and surjective
+
 Inverse Functions
 If f is bijection, f⁻¹ exists
 
@@ -308,10 +337,15 @@ Example: Fibonacci sequence f₀ = 0, f₁ = 1, fₙ = fₙ₋₁ + fₙ₋₂
 
 Summations
 Sum	Closed Form
+
 ∑_{k=0}^{n} ar^k	a(r^{n+1} - 1)/(r - 1) (r ≠ 1)
+
 ∑_{k=1}^{n} k	n(n+1)/2
+
 ∑_{k=1}^{n} k²	n(n+1)(2n+1)/6
+
 ∑_{k=1}^{n} k³	[n(n+1)/2]²
+
 ∑_{k=0}^{∞} x^k	1/(1 - x) for	x	< 1
 
 # 2.5 Cardinality of Sets
@@ -621,12 +655,19 @@ Handshaking Theorem: ∑ deg(v) = 2|E|
 
 # Special Graphs
 Graph	Notation	Properties
+
 Complete graph	Kₙ	Every pair of vertices adjacent
+
 Cycle	Cₙ	n vertices in cycle (n ≥ 3)
+
 Wheel	Wₙ	Cₙ with extra vertex connected to all
+
 n-Cube	Qₙ	Vertices = bit strings length n
+
 Bipartite		V = V₁ ∪ V₂, edges only between V₁ and V₂
+
 Complete bipartite	K_{m,n}	All possible edges between parts
+
 Subgraphs
 Subgraph: Graph whose vertices and edges are subsets of original
 
@@ -806,10 +847,15 @@ Minimax algorithm for two-player games
 # 11.3 Tree Traversal
 Traversal Orders
 Order	Process order
+
 Preorder	Root, left subtree, right subtree
+
 Inorder	Left subtree, root, right subtree
+
 Postorder	Left subtree, right subtree, root
+
 Infix, Prefix, Postfix Notation
+
 Infix: Operand operator operand (needs parentheses)
 
 Prefix (Polish): Operator operand operand
